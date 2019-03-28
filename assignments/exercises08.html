@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Exercise sheet 8 - MTH 410</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/github.css" />
+  <link rel="stylesheet" type="text/css" href="../css/syntax.css" />
+  <link rel="alternate" type="application/atom+xml" title="MTH 410" href="../atom.xml" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+  <div class="navbar">
+    <header>
+      <hgroup>
+        <h1><a href="../index.html">Algebraic Topology (MTH 410)</a></h1>
+      </hgroup>
+    </header>
+    <nav id="mainnav">
+      <div id="topmenu">
+        <menu>
+          <a href="../index.html">Course information</a>
+	  
+	  
+          <a href="../assignments.html">Exercise sheets</a>
+	  
+	  
+        </menu>
+	</div>
+    </nav>
+    </div>
+    <section id="pagecontent">
+      <a href="../assignments/pdfs/exercises08.pdf">Download PDF</a>
+        <article>
+<header>
+<h1>Exercise sheet 8</h1>
+</header>
+
+<section>
+<ol type="1">
+<li>Recall that we defined <span class="math inline">\(C(v) = \cup_{w \sim v} \mathrm{St}(w)\)</span>.
+<ol type="a">
+<li>Why is <span class="math inline">\(C(v)\)</span> path connected?</li>
+<li>Why is <span class="math inline">\(C(v)\)</span> open?</li>
+<li>Why is <span class="math inline">\(C(v) \cap C(w)=\emptyset\)</span> if <span class="math inline">\(v \nsim w\)</span>?</li>
+<li>Why is <span class="math inline">\(C(v) =C(w)\)</span> if <span class="math inline">\(v \sim w\)</span>?</li>
+<li>Why are they the components of the geometric realization of the simplicial complex?</li>
+<li>Prove that if <span class="math inline">\(v\)</span> and <span class="math inline">\(w\)</span> are vertices that belong to <span class="math inline">\(C(u)\)</span> then there exists then there exists a 1-chain <span class="math inline">\(c\)</span> so that <span class="math inline">\(\partial c = v - w\)</span>.</li>
+</ol></li>
+<li><p>Prove that <span class="math inline">\(\partial_{n+1} \circ \partial_n = 0\)</span>.</p></li>
+<li><p>Realize the klein bottle as a simplicial complex and compute its homology.</p></li>
+<li><p>Prove that if <span class="math inline">\(\sum n_i \sigma_i \in Z_n(K)\)</span> is such that <span class="math inline">\(\sigma_0\)</span> has an <span class="math inline">\(n-1\)</span> face that is not shared by any other <span class="math inline">\(\sigma_i\)</span> where <span class="math inline">\(i \neq 0\)</span>, then <span class="math inline">\(n_0=0\)</span>.</p></li>
+<li><p>Prove that if <span class="math inline">\(\sum n_i \sigma_i \in Z_n(K)\)</span> is such that each <span class="math inline">\(n-1\)</span> face of each <span class="math inline">\(\sigma_i\)</span> is the face of exactly two distinct <span class="math inline">\(\sigma_j\)</span>, then <span class="math inline">\(n_i = \pm n_0\)</span> for each <span class="math inline">\(i\)</span>.</p></li>
+<li><p>Prove that an n-chain homologous to an n-cycle is also an n-cycle.</p></li>
+<li><p>Prove that the augmentation map is a homomorphism.</p></li>
+<li><p>Prove that <span class="math inline">\(\epsilon(c)=0\)</span> is a necessary condition for the zero chain <span class="math inline">\(c\)</span> to be a boundary of some 1-chain. Is it also sufficient?</p></li>
+<li><p>Prove that for any 0-simplex <span class="math inline">\(v\)</span> of a simplicial complex, <span class="math inline">\(nv\)</span>, where <span class="math inline">\(n \in \mathbb{Z}\)</span>, can never be a boundary of a 1-chain.</p></li>
+<li><p>Derive an expression for the <span class="math inline">\(\partial([w , \sigma])\)</span> in terms of <span class="math inline">\(\partial (\sigma)\)</span> for any simplex <span class="math inline">\(\sigma\)</span>. Use that to extend the expression to <span class="math inline">\(\partial([w , c])\)</span> for any chain <span class="math inline">\(c\)</span>. (Note that in dimension 0 your expression for <span class="math inline">\(\partial([w,c])\)</span> should involve the augmentation map.)</p></li>
+<li><p>Use the above to prove that any chain in a cone is homologous to a chain which has non-zero coefficient only for the simplices that contain the vertex of the cone as a vertex of the simplex. Then prove that any such chain can only be a cycle if all of its coefficients are zero, thereby proving that a cone is acyclic (all reduced homologies are 0).</p></li>
+<li>The previous question may be used to compute the homology of a boundary of an <span class="math inline">\(n\)</span>-simplex, <span class="math inline">\(\mathrm{Bd}(\sigma)\)</span>, for some simplex <span class="math inline">\(\sigma\)</span>, which can be realized as a simplicial complex (how?):
+<ol type="a">
+<li>Prove that the <span class="math inline">\(\mathrm{H}_i(\mathrm{Bd}(\sigma)) = \mathrm{H}_i(\sigma)\)</span> for <span class="math inline">\(i \leq n-1\)</span>. Here we are using the same notation for the simplex or its boundary treated as a simplicial complex. <em>(Hint: between the simplex, treated as a simplicial complex, and its boundary, also treated as a simplicial complex, there is only one simplex extra)</em></li>
+<li>Prove that if any <span class="math inline">\(n-1\)</span>-chain of <span class="math inline">\(\mathrm{Bd}(\sigma)\)</span> is a cycle then all the coefficients must be the same. Since it cannot be a boundary (why?), this tells us that <span class="math inline">\(\mathrm{H}_{n-1}(\mathrm{Bd}(\sigma))=\mathbb{Z}\)</span></li>
+</ol></li>
+<li><p>Prove that for any simplicial map <span class="math inline">\(f : K \to L\)</span>, <span class="math inline">\(\partial \circ f_{\#} = f_{\#} \circ \partial\)</span>, where <span class="math inline">\(f_\# : C(K) \to C(L)\)</span> is the map induced by <span class="math inline">\(f\)</span>. <em>(You will have to split it into cases depending on the dimension</em>)</p></li>
+<li><p>Prove that for any simplicial map <span class="math inline">\(f: K \to L\)</span>, <span class="math inline">\(f_* : \mathrm{H}_n(K) \to \mathrm{H}_n(L)\)</span> is well defined.</p></li>
+</ol>
+</section>
+</article>
+
+    </section>
+<section id="posts" class="sidenav">
+
+    <h2>Latest exercise sheet</h2>
+    <ul>
+	  
+          <li><a href="../assignments/exercises08.html">Exercise sheet 8</a>
+&nbsp;    <a href="../assignments/pdfs/exercises08.pdf">Download PDF</a>
+	  </li>
+	  
+    </ul>
+    <p><a href="../assignments.html">All exercise sheets&hellip;</a></p>
+
+
+
+</section>
+</body>
+</html>
