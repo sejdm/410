@@ -45,6 +45,7 @@
 <li>Compute all the homologies of <span class="math inline">\(K_1\)</span> and <span class="math inline">\(K_2\)</span> using the definition of homology. To represent the homology classes, find cycles induced by the inclusion map of the intersection. You will need to know this for the next part.</li>
 <li>Use the Mayer-Vietoris sequence to compute all the homologies of the torus.</li>
 </ol></li>
+<li><p>This is an alternative way to compute the homologies of <span class="math inline">\(S^n\)</span>. Each <span class="math inline">\(S^n\)</span> can be realized as a simplicial complex <span class="math inline">\(K\)</span> such that <span class="math inline">\(K = K_1 \cup K_2\)</span>, where <span class="math inline">\(K_i\)</span> are sub-complexes of <span class="math inline">\(K\)</span> whose underlying spaces are each the closed ball of dimension <span class="math inline">\(n\)</span>, and <span class="math inline">\(K_1\cap K_2\)</span> is a subcomplex of <span class="math inline">\(K\)</span> whose underlying space is <span class="math inline">\(S^{n-1}\)</span>. Prove that <span class="math inline">\(K_1\)</span> and <span class="math inline">\(K_2\)</span> are acyclic. <em>(For example, if you realize <span class="math inline">\(S^n\)</span> as the boundary of a simplex, you can realize <span class="math inline">\(K_1\)</span> and <span class="math inline">\(K_2\)</span> as cones.)</em> Use that observation along with the Mayer-Vietoris to prove that <span class="math inline">\(\tilde{\mathrm{H}}_k(S^n) = \tilde{\mathrm{H}}_{k-1}(S^{n-1})\)</span>, thereby allowing you to inductively compute each homology of each <span class="math inline">\(S^n\)</span>. Notice that reduced homology proved a lot more convenient.</p></li>
 <li>Let <span class="math inline">\(f, g : K \to L\)</span> be simplicial maps and <span class="math inline">\(D_k : C_k(K) \to C_{k+1}(L)\)</span> is a map such that <span class="math inline">\(\partial \circ D + D \circ \partial = f_{\#} - g_{\#}\)</span>.
 <ol type="a">
 <li>Prove that <span class="math inline">\(\alpha_k(c) := f_{\#}(c) - g_{\#}(c) - D_k (\partial (c))\)</span> is a cycle for any <span class="math inline">\(k+1\)</span>-chain <span class="math inline">\(c\)</span>, and therefore even for an oriented simplex (treated as a chain).</li>
@@ -56,8 +57,14 @@
 <li>How can you realize <span class="math inline">\(|K|\times [0,1]\)</span> as the polytope of a some simplicial complex <span class="math inline">\(L\)</span>?</li>
 <li>The inclusion maps <span class="math inline">\(i_0, i_1 : |K| \to |K| \times [0,1]\)</span> defined by <span class="math inline">\(i_0(x) = (x, 0)\)</span> and <span class="math inline">\(i_1(x) = (x, 1)\)</span> are simplicial maps (why?). Prove that their induced maps on the level of chains are chain homotopic. <em>(Hint: There is an obvious acyclic carrier for both maps.)</em></li>
 </ol></li>
+<li><p>Prove that the subdivision of a subdivision of a simplicial complex is a subdivision.</p></li>
+<li>Consider a sudivision <span class="math inline">\(K'\)</span> of a simplicial complex <span class="math inline">\(K\)</span>
+<ol type="a">
+<li>Why is the set of points <span class="math inline">\(|K|\)</span> exactly the same set as <span class="math inline">\(|K'|\)</span>?</li>
+<li>Why are the topologies of <span class="math inline">\(|K|\)</span> and <span class="math inline">\(|K'|\)</span> the same? <em>(Here is where you will use the fact that each simplex of <span class="math inline">\(K\)</span> is a union of finitely many simplices of <span class="math inline">\(K'\)</span>).</em></li>
+<li>Prove that if <span class="math inline">\(A\)</span> is a subcomplex of <span class="math inline">\(K\)</span>, then the simplices in <span class="math inline">\(K'\)</span> that lie in <span class="math inline">\(A\)</span> form a subdivision of <span class="math inline">\(A\)</span>.</li>
+</ol></li>
 </ol>
-<p><strong>To be updated</strong></p>
 </section>
 </article>
 
